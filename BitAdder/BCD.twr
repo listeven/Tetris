@@ -1,0 +1,153 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml BCD.twx BCD.ncd -o BCD.twr BCD.pcf -ucf BCDConstraints.ucf
+
+Design file:              BCD.ncd
+Physical constraint file: BCD.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.22 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+------------------+---------+
+Source Pad     |Destination Pad   |  Delay  |
+---------------+------------------+---------+
+x<0>           |CarryOut          |   33.994|
+x<0>           |CarryOutFake      |   55.834|
+x<0>           |EitherZeroOrSix<1>|   34.965|
+x<0>           |EitherZeroOrSix<2>|   34.965|
+x<0>           |FirstCarry        |   33.677|
+x<0>           |FirstSums<0>      |    7.277|
+x<0>           |FirstSums<1>      |   15.738|
+x<0>           |FirstSums<2>      |   22.090|
+x<0>           |FirstSums<3>      |   28.538|
+x<0>           |Q<0>              |    7.953|
+x<0>           |Q<1>              |   35.522|
+x<0>           |Q<2>              |   43.609|
+x<0>           |Q<3>              |   49.409|
+x<0>           |V                 |   34.648|
+x<0>           |V2                |   56.520|
+x<1>           |CarryOut          |   26.423|
+x<1>           |CarryOutFake      |   48.263|
+x<1>           |EitherZeroOrSix<1>|   27.394|
+x<1>           |EitherZeroOrSix<2>|   27.394|
+x<1>           |FirstCarry        |   26.106|
+x<1>           |FirstSums<1>      |    7.834|
+x<1>           |FirstSums<2>      |   14.519|
+x<1>           |FirstSums<3>      |   20.967|
+x<1>           |Q<1>              |   27.951|
+x<1>           |Q<2>              |   36.038|
+x<1>           |Q<3>              |   41.838|
+x<1>           |V                 |   27.077|
+x<1>           |V2                |   48.949|
+x<2>           |CarryOut          |   19.211|
+x<2>           |CarryOutFake      |   41.051|
+x<2>           |EitherZeroOrSix<1>|   20.182|
+x<2>           |EitherZeroOrSix<2>|   20.182|
+x<2>           |FirstCarry        |   18.894|
+x<2>           |FirstSums<2>      |    7.457|
+x<2>           |FirstSums<3>      |   13.755|
+x<2>           |Q<1>              |   20.739|
+x<2>           |Q<2>              |   28.826|
+x<2>           |Q<3>              |   34.626|
+x<2>           |V                 |   19.865|
+x<2>           |V2                |   41.737|
+x<3>           |CarryOut          |   12.673|
+x<3>           |CarryOutFake      |   34.513|
+x<3>           |EitherZeroOrSix<1>|   13.644|
+x<3>           |EitherZeroOrSix<2>|   13.644|
+x<3>           |FirstCarry        |   12.356|
+x<3>           |FirstSums<3>      |    7.603|
+x<3>           |Q<1>              |   14.201|
+x<3>           |Q<2>              |   22.288|
+x<3>           |Q<3>              |   28.088|
+x<3>           |V                 |   13.327|
+x<3>           |V2                |   35.199|
+y<0>           |CarryOut          |   35.056|
+y<0>           |CarryOutFake      |   56.896|
+y<0>           |EitherZeroOrSix<1>|   36.027|
+y<0>           |EitherZeroOrSix<2>|   36.027|
+y<0>           |FirstCarry        |   34.739|
+y<0>           |FirstSums<0>      |    6.670|
+y<0>           |FirstSums<1>      |   16.800|
+y<0>           |FirstSums<2>      |   23.152|
+y<0>           |FirstSums<3>      |   29.600|
+y<0>           |Q<0>              |    7.346|
+y<0>           |Q<1>              |   36.584|
+y<0>           |Q<2>              |   44.671|
+y<0>           |Q<3>              |   50.471|
+y<0>           |V                 |   35.710|
+y<0>           |V2                |   57.582|
+y<1>           |CarryOut          |   27.691|
+y<1>           |CarryOutFake      |   49.531|
+y<1>           |EitherZeroOrSix<1>|   28.662|
+y<1>           |EitherZeroOrSix<2>|   28.662|
+y<1>           |FirstCarry        |   27.374|
+y<1>           |FirstSums<1>      |    7.500|
+y<1>           |FirstSums<2>      |   15.787|
+y<1>           |FirstSums<3>      |   22.235|
+y<1>           |Q<1>              |   29.219|
+y<1>           |Q<2>              |   37.306|
+y<1>           |Q<3>              |   43.106|
+y<1>           |V                 |   28.345|
+y<1>           |V2                |   50.217|
+y<2>           |CarryOut          |   20.108|
+y<2>           |CarryOutFake      |   41.948|
+y<2>           |EitherZeroOrSix<1>|   21.079|
+y<2>           |EitherZeroOrSix<2>|   21.079|
+y<2>           |FirstCarry        |   19.791|
+y<2>           |FirstSums<2>      |    7.287|
+y<2>           |FirstSums<3>      |   14.652|
+y<2>           |Q<1>              |   21.636|
+y<2>           |Q<2>              |   29.723|
+y<2>           |Q<3>              |   35.523|
+y<2>           |V                 |   20.762|
+y<2>           |V2                |   42.634|
+y<3>           |CarryOut          |   13.301|
+y<3>           |CarryOutFake      |   35.141|
+y<3>           |EitherZeroOrSix<1>|   14.272|
+y<3>           |EitherZeroOrSix<2>|   14.272|
+y<3>           |FirstCarry        |   12.984|
+y<3>           |FirstSums<3>      |    7.448|
+y<3>           |Q<1>              |   14.829|
+y<3>           |Q<2>              |   22.916|
+y<3>           |Q<3>              |   28.716|
+y<3>           |V                 |   13.955|
+y<3>           |V2                |   35.827|
+---------------+------------------+---------+
+
+
+Analysis completed Fri Oct 23 14:10:44 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 218 MB
+
+
+

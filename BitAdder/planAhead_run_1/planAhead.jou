@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Thu Oct 29 18:38:28 2015
+# Process ID: 759280
+# Log file: X:/311Lab/BitAdder/planAhead_run_1/planAhead.log
+# Journal file: X:/311Lab/BitAdder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source X:/311Lab/BitAdder/pa.fromHdl.tcl
+startgroup
+set_property package_pin T5 [get_ports {a[0]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {a[1]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {a[2]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {a[3]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {b[0]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {b[1]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {b[2]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {b[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  m]]
+startgroup
+set_property package_pin C4 [get_ports S0]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports S1]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports m]
+endgroup
+set_property package_pin "" [get_ports [list  {Y[0]}]]
+set_property package_pin "" [get_ports [list  {a[0]}]]
+startgroup
+set_property package_pin T5 [get_ports {a[3]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {a[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {a[1]}]]
+startgroup
+set_property package_pin V8 [get_ports {a[2]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {a[1]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {a[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {b[3]}]]
+startgroup
+set_property package_pin T10 [get_ports {b[0]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {b[3]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {b[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {b[1]}]]
+startgroup
+set_property package_pin V9 [get_ports {b[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {b[1]}]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports {Y[0]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {Y[1]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {Y[2]}]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports {Y[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Y[5]}]]
+startgroup
+set_property package_pin M11 [get_ports {Y[4]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {Y[5]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {Y[6]}]
+endgroup
+startgroup
+set_property package_pin T11 [get_ports {Y[7]}]
+endgroup
+save_design

@@ -1,0 +1,370 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: BCD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BCD.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BCD"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : BCD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\WholeAdder.v" into library work
+Parsing module <WholeAdder>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Compliment.v" into library work
+Parsing module <Compliment>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Verilog.v" into library work
+Parsing module <Verilog>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" into library work
+Parsing module <BCD>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" Line 30: Port Bcom is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" Line 38: Port Bcom is not connected to this instance
+
+Elaborating module <BCD>.
+
+Elaborating module <Verilog>.
+
+Elaborating module <Compliment>.
+
+Elaborating module <WholeAdder>.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" Line 30: Size mismatch in connection of port <m>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" Line 38: Size mismatch in connection of port <m>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BCD>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v".
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" line 30: Output port <Bcom> of the instance <addFirst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" line 30: Output port <C> of the instance <addFirst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" line 38: Output port <Bcom> of the instance <addSecong> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" line 38: Output port <C> of the instance <addSecong> is unconnected or connected to loadless signal.
+    Found 1x1-bit multiplier for signal <n0010> created at line 31.
+    Found 1x1-bit multiplier for signal <n0011> created at line 31.
+    Summary:
+	inferred   2 Multiplier(s).
+Unit <BCD> synthesized.
+
+Synthesizing Unit <Verilog>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Verilog.v".
+WARNING:Xst:653 - Signal <C<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+Unit <Verilog> synthesized.
+
+Synthesizing Unit <Compliment>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Compliment.v".
+    Summary:
+Unit <Compliment> synthesized.
+
+Synthesizing Unit <WholeAdder>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\WholeAdder.v".
+    Found 1-bit adder for signal <n0015> created at line 30.
+    Found 1-bit adder for signal <C> created at line 30.
+    Found 1x1-bit multiplier for signal <n0007> created at line 30.
+    Found 1x1-bit multiplier for signal <n0008> created at line 30.
+    Found 1x1-bit multiplier for signal <n0010> created at line 30.
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <WholeAdder> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 26
+ 1x1-bit multiplier                                    : 26
+# Adders/Subtractors                                   : 16
+ 1-bit adder                                           : 16
+# Xors                                                 : 26
+ 1-bit xor2                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <WholeAdder>.
+	Multiplier <Mmult_n0007> in block <WholeAdder> and adder/subtractor <Madd_C_Madd> in block <WholeAdder> are combined into a MAC<Maddsub_n0007>.
+Unit <WholeAdder> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 8
+ 1x1-to-1-bit MAC                                      : 8
+# Multipliers                                          : 18
+ 1x1-bit multiplier                                    : 18
+# Xors                                                 : 26
+ 1-bit xor2                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <BCD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BCD, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BCD.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 18
+#      GND                         : 1
+#      LUT2                        : 7
+#      LUT3                        : 3
+#      LUT4                        : 1
+#      LUT5                        : 4
+#      LUT6                        : 1
+#      VCC                         : 1
+# IO Buffers                       : 25
+#      IBUF                        : 8
+#      OBUF                        : 17
+# DSPs                             : 16
+#      DSP48A1                     : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   16  out of   9112     0%  
+    Number used as Logic:                16  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     16
+   Number with an unused Flip Flop:      16  out of     16   100%  
+   Number with an unused LUT:             0  out of     16     0%  
+   Number of fully used LUT-FF pairs:     0  out of     16     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    232    10%  
+
+Specific Feature Utilization:
+ Number of DSP48A1s:                     16  out of     32    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 55.694ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 62630736552 / 15
+-------------------------------------------------------------------------
+Delay:               55.694ns (Levels of Logic = 17)
+  Source:            y<0> (PAD)
+  Destination:       V2 (PAD)
+
+  Data Path: y<0> to V2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.650  y_0_IBUF (y_0_IBUF)
+     DSP48A1:A0->PCOUT47    1   4.469   0.000  addFirst/bit1/Mmult_n0008 (addFirst/bit1/Mmult_n0008_PCOUT_to_addFirst/bit1/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    4   2.264   0.683  addFirst/bit1/Maddsub_n0007 (addFirst/C<0>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  addFirst/bit2/Mmult_n0008 (addFirst/bit2/Mmult_n0008_PCOUT_to_addFirst/bit2/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    4   2.264   0.683  addFirst/bit2/Maddsub_n0007 (addFirst/C<1>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  addFirst/bit3/Mmult_n0008 (addFirst/bit3/Mmult_n0008_PCOUT_to_addFirst/bit3/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    6   2.264   0.744  addFirst/bit3/Maddsub_n0007 (addFirst/C<2>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  addFirst/bit4/Mmult_n0008 (addFirst/bit4/Mmult_n0008_PCOUT_to_addFirst/bit4/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    7   2.264   0.774  addFirst/bit4/Maddsub_n0007 (FirstCarry_OBUF)
+     LUT6:I5->O            5   0.205   0.714  CarryOut1 (CarryOut_OBUF)
+     DSP48A1:A0->P0        3   4.560   0.650  addSecong/bit2/Maddsub_n0007 (addSecong/C<1>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  addSecong/bit3/Mmult_n0008 (addSecong/bit3/Mmult_n0008_PCOUT_to_addSecong/bit3/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    4   2.264   0.683  addSecong/bit3/Maddsub_n0007 (addSecong/C<2>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  addSecong/bit4/Mmult_n0008 (addSecong/bit4/Mmult_n0008_PCOUT_to_addSecong/bit4/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    2   2.264   0.721  addSecong/bit4/Maddsub_n0007 (CarryOutFake_OBUF)
+     LUT2:I0->O            1   0.203   0.579  addSecong/Mxor_V_xo<0>1 (V2_OBUF)
+     OBUF:I->O                 2.571          V2_OBUF (V2)
+    ----------------------------------------
+    Total                     55.694ns (48.814ns logic, 6.880ns route)
+                                       (87.6% logic, 12.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.23 secs
+ 
+--> 
+
+Total memory usage is 255588 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

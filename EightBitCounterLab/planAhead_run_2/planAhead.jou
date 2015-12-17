@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Thu Nov 12 17:22:35 2015
+# Process ID: 8260
+# Log file: X:/311Lab/EightBitCounterLab/planAhead_run_2/planAhead.log
+# Journal file: X:/311Lab/EightBitCounterLab/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source X:/311Lab/EightBitCounterLab/pa.fromHdl.tcl
+startgroup
+set_property package_pin U16 [get_ports {Y[0]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {Y[1]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {Y[2]}]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports {Y[3]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {Y[4]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {Y[5]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {Y[6]}]
+endgroup
+startgroup
+set_property package_pin T11 [get_ports {Y[7]}]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports clk_in]
+endgroup
+set_property package_pin "" [get_ports [list  down]]
+set_property package_pin "" [get_ports [list  state]]
+startgroup
+set_property package_pin D9 [get_ports trigger]
+endgroup
+save_design

@@ -1,0 +1,4 @@
+verilog work "WholeAdder.v"
+verilog work "Compliment.v"
+verilog work "Verilog.v"
+verilog work "BCD.v"

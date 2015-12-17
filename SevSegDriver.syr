@@ -1,0 +1,497 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: SevSegDriver.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SevSegDriver.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SevSegDriver"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : SevSegDriver
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\Project\seven_alternate.v" into library work
+Parsing module <seven_alternate>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\Project\bin2led7.v" into library work
+Parsing module <binary_to_segment>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\SevSegDriver.v" into library work
+Parsing module <SevSegDriver>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <SevSegDriver>.
+WARNING:HDLCompiler:604 - "\\ad\eng\users\f\e\fedir5\311Lab\SevSegDriver.v" Line 25: Module instantiation should have an instance name
+
+Elaborating module <binary_to_segment>.
+WARNING:HDLCompiler:604 - "\\ad\eng\users\f\e\fedir5\311Lab\SevSegDriver.v" Line 26: Module instantiation should have an instance name
+
+Elaborating module <seven_alternate>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SevSegDriver>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\SevSegDriver.v".
+    Summary:
+	no macro.
+Unit <SevSegDriver> synthesized.
+
+Synthesizing Unit <binary_to_segment>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\Project\bin2led7.v".
+    Found 16x7-bit Read Only RAM for signal <seven>
+    Summary:
+	inferred   1 RAM(s).
+Unit <binary_to_segment> synthesized.
+
+Synthesizing Unit <seven_alternate>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\Project\seven_alternate.v".
+    Found 31-bit register for signal <cnt>.
+    Found 2-bit register for signal <count>.
+    Found 4-bit register for signal <AN>.
+    Found 4-bit register for signal <small_bin>.
+    Found 1-bit register for signal <slowclk>.
+    Found 31-bit adder for signal <cnt[30]_GND_3_o_add_2_OUT> created at line 46.
+    Found 2-bit adder for signal <count[1]_GND_3_o_add_6_OUT> created at line 51.
+    Found 4x4-bit Read Only RAM for signal <count[1]_GND_3_o_wide_mux_7_OUT>
+    Found 4-bit 4-to-1 multiplexer for signal <count[1]_big_bin[15]_wide_mux_8_OUT> created at line 52.
+    Found 31-bit comparator greater for signal <GND_3_o_cnt[30]_LessThan_2_o> created at line 39
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <seven_alternate> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 2
+ 2-bit adder                                           : 1
+ 31-bit adder                                          : 1
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 2-bit register                                        : 1
+ 31-bit register                                       : 1
+ 4-bit register                                        : 2
+# Comparators                                          : 1
+ 31-bit comparator greater                             : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <binary_to_segment>.
+INFO:Xst:3231 - The small RAM <Mram_seven> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seven>         |          |
+    -----------------------------------------------------------------------
+Unit <binary_to_segment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seven_alternate>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+INFO:Xst:3231 - The small RAM <Mram_count[1]_GND_3_o_wide_mux_7_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <count[1]_GND_3_o_add_6_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <seven_alternate> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 31-bit up counter                                     : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 1
+ 31-bit comparator greater                             : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SevSegDriver> ...
+
+Optimizing unit <seven_alternate> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SevSegDriver, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 42
+ Flip-Flops                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SevSegDriver.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 152
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 30
+#      LUT2                        : 29
+#      LUT4                        : 8
+#      LUT5                        : 7
+#      LUT6                        : 4
+#      MUXCY                       : 38
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 42
+#      FD                          : 34
+#      FDR                         : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 16
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              42  out of  18224     0%  
+ Number of Slice LUTs:                   81  out of   9112     0%  
+    Number used as Logic:                81  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     81
+   Number with an unused Flip Flop:      39  out of     81    48%  
+   Number with an unused LUT:             0  out of     81     0%  
+   Number of fully used LUT-FF pairs:    42  out of     81    51%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    232    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+_i000002/slowclk                   | NONE(_i000002/count_1) | 10    |
+clk                                | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.412ns (Maximum Frequency: 293.088MHz)
+   Minimum input arrival time before clock: 2.354ns
+   Maximum output required time after clock: 4.821ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock '_i000002/slowclk'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 19 / 10
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            _i000002/count_0 (FF)
+  Destination:       _i000002/count_0 (FF)
+  Source Clock:      _i000002/slowclk rising
+  Destination Clock: _i000002/slowclk rising
+
+  Data Path: _i000002/count_0 to _i000002/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   0.856  _i000002/count_0 (_i000002/count_0)
+     INV:I->O              1   0.206   0.579  _i000002/Mcount_count_xor<0>11_INV_0 (_i000002/Result<0>1)
+     FD:D                      0.102          _i000002/count_0
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.412ns (frequency: 293.087MHz)
+  Total number of paths / destination ports: 1841 / 40
+-------------------------------------------------------------------------
+Delay:               3.412ns (Levels of Logic = 8)
+  Source:            _i000002/cnt_6 (FF)
+  Destination:       _i000002/cnt_10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: _i000002/cnt_6 to _i000002/cnt_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.995  _i000002/cnt_6 (_i000002/cnt_6)
+     LUT5:I0->O            1   0.203   0.000  _i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_lut<1> (_i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  _i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<1> (_i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  _i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<2> (_i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  _i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<3> (_i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  _i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<4> (_i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  _i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<5> (_i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<5>)
+     MUXCY:CI->O          25   0.019   1.193  _i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<6> (_i000002/Mcompar_GND_3_o_cnt[30]_LessThan_2_o_cy<6>)
+     LUT2:I1->O            1   0.205   0.000  _i000002/cnt_10_rstpot (_i000002/cnt_10_rstpot)
+     FD:D                      0.102          _i000002/cnt_10
+    ----------------------------------------
+    Total                      3.412ns (1.224ns logic, 2.188ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_i000002/slowclk'
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Offset:              2.354ns (Levels of Logic = 2)
+  Source:            big_bin<3> (PAD)
+  Destination:       _i000002/small_bin_3 (FF)
+  Destination Clock: _i000002/slowclk rising
+
+  Data Path: big_bin<3> to _i000002/small_bin_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.827  big_bin_3_IBUF (big_bin_3_IBUF)
+     LUT6:I2->O            1   0.203   0.000  _i000002/Mmux_count[1]_big_bin[15]_wide_mux_8_OUT41 (_i000002/count[1]_big_bin[15]_wide_mux_8_OUT<3>)
+     FD:D                      0.102          _i000002/small_bin_3
+    ----------------------------------------
+    Total                      2.354ns (1.527ns logic, 0.827ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_i000002/slowclk'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              4.821ns (Levels of Logic = 2)
+  Source:            _i000002/small_bin_1 (FF)
+  Destination:       seven<6> (PAD)
+  Source Clock:      _i000002/slowclk rising
+
+  Data Path: _i000002/small_bin_1 to seven<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.021  _i000002/small_bin_1 (_i000002/small_bin_1)
+     LUT4:I0->O            1   0.203   0.579  _i000001/Mram_seven111 (seven_1_OBUF)
+     OBUF:I->O                 2.571          seven_1_OBUF (seven<1>)
+    ----------------------------------------
+    Total                      4.821ns (3.221ns logic, 1.600ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock _i000002/slowclk
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+_i000002/slowclk|    2.190|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.412|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.53 secs
+ 
+--> 
+
+Total memory usage is 254564 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,3 @@
+verilog work "Project/seven_alternate.v"
+verilog work "Project/bin2led7.v"
+verilog work "SevSegDriver.v"

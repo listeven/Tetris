@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="BitAdder.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="BCD.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="BCD.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="BCD.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="BCD.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="BCD.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="BCD.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="BCD.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="BCD.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="BCD.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="BCD.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BCD.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="BCD.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="BCD.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="BCD.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="BCD.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="BCD.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="BCD.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="BCD.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="BCD.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="BCD.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="BCD_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="BCD_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="BCD_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="BCD_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="BCD_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="BCD_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BCD_map.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="BCD_map_fpga_editor.log"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BCD_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="BCD_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="BCD_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BCD_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="BCD_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="BCD_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="BCD_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BCD_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BCDsimulate_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BCDsimulate_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Compliment.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Compliment.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Compliment.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ComplimentTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ComplimentTest_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FullAdderTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="FullAdderTest_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplier.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplier.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Multiplier.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MuxAdderMultiplierBCDBuffer.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MuxAdderMultiplierBCDBuffer.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MuxAdderMultiplierBCDBuffer.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MuxAdderMultiplierBCDBuffer.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MuxAdderMultiplierBCDBuffer.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="MuxAdderMultiplierBCDBuffer.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MuxAdderMultiplierBCDBuffer.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="MuxAdderMultiplierBCDBuffer.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="MuxAdderMultiplierBCDBuffer.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MuxAdderMultiplierBCDBuffer.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="MuxAdderMultiplierBCDBuffer.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MuxAdderMultiplierBCDBuffer.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="MuxAdderMultiplierBCDBuffer.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="MuxAdderMultiplierBCDBuffer.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MuxAdderMultiplierBCDBuffer.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MuxAdderMultiplierBCDBuffer_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="MuxAdderMultiplierBCDBuffer_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MuxAdderMultiplierBCDBuffer_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="MuxAdderMultiplierBCDBuffer_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MuxAdderMultiplierBCDBuffer_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MuxAdderMultiplierBCDBuffer_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MuxAdderMultiplierBCDBuffer_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MuxAdderMultiplierBCDBuffer_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="MuxAdderMultiplierBCDBuffer_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="MuxAdderMultiplierBCDBuffer_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MuxAdderMultiplierBCDBuffer_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Verilog.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Verilog.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Verilog.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Verilog.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Verilog.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Verilog.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Verilog.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Verilog.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Verilog.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Verilog.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Verilog.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Verilog.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Verilog.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Verilog.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Verilog.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Verilog.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Verilog.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Verilog.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Verilog.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Verilog_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Verilog_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Verilog_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Verilog_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Verilog_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Verilog_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Verilog_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Verilog_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Verilog_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Verilog_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="WholeAdderTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="WholeAdderTest_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="bcd.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="bcd.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="bcd.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_LL" xil_pn:name="bcd.ll"/>
+    <file xil_pn:fileType="FILE_MSK" xil_pn:name="bcd.msk"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="muxaddermultiplierbcdbuffer.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="muxaddermultiplierbcdbuffer.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="muxaddermultiplierbcdbuffer.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_LL" xil_pn:name="muxaddermultiplierbcdbuffer.ll"/>
+    <file xil_pn:fileType="FILE_MSK" xil_pn:name="muxaddermultiplierbcdbuffer.msk"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testBCD_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testBCD_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testMultiplier_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testMuxAddSubMulBuff_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testMuxAddSubMulBuff_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="testMuxAddSubMulBuff_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testMux_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testMux_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="verilog.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="verilog.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="verilog.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_LL" xil_pn:name="verilog.ll"/>
+    <file xil_pn:fileType="FILE_MSK" xil_pn:name="verilog.msk"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1446157488" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1446157488">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446157488" xil_pn:in_ck="-8786820653952908926" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1446157488">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="And.v"/>
+      <outfile xil_pn:name="BCD.v"/>
+      <outfile xil_pn:name="BCDsimulate.v"/>
+      <outfile xil_pn:name="Compliment.v"/>
+      <outfile xil_pn:name="ComplimentTest.v"/>
+      <outfile xil_pn:name="FourToOneMultiplexer.v"/>
+      <outfile xil_pn:name="FullAdderTest.v"/>
+      <outfile xil_pn:name="IntermediateModule.v"/>
+      <outfile xil_pn:name="Multiplier.v"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.v"/>
+      <outfile xil_pn:name="TestModule.v"/>
+      <outfile xil_pn:name="ToFourBit.v"/>
+      <outfile xil_pn:name="Verilog.v"/>
+      <outfile xil_pn:name="WholeAdder.v"/>
+      <outfile xil_pn:name="WholeAdderTest.v"/>
+      <outfile xil_pn:name="testBCD.v"/>
+      <outfile xil_pn:name="testMultiplier.v"/>
+      <outfile xil_pn:name="testMux.v"/>
+      <outfile xil_pn:name="testMuxAddSubMulBuff.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1446157488" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7724866047428076149" xil_pn:start_ts="1446157488">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446157488" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8147824169573685239" xil_pn:start_ts="1446157488">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446157488" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-210576403814160642" xil_pn:start_ts="1446157488">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446157488" xil_pn:in_ck="-8786820653952908926" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1446157488">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="And.v"/>
+      <outfile xil_pn:name="BCD.v"/>
+      <outfile xil_pn:name="BCDsimulate.v"/>
+      <outfile xil_pn:name="Compliment.v"/>
+      <outfile xil_pn:name="ComplimentTest.v"/>
+      <outfile xil_pn:name="FourToOneMultiplexer.v"/>
+      <outfile xil_pn:name="FullAdderTest.v"/>
+      <outfile xil_pn:name="IntermediateModule.v"/>
+      <outfile xil_pn:name="Multiplier.v"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.v"/>
+      <outfile xil_pn:name="TestModule.v"/>
+      <outfile xil_pn:name="ToFourBit.v"/>
+      <outfile xil_pn:name="Verilog.v"/>
+      <outfile xil_pn:name="WholeAdder.v"/>
+      <outfile xil_pn:name="WholeAdderTest.v"/>
+      <outfile xil_pn:name="testBCD.v"/>
+      <outfile xil_pn:name="testMultiplier.v"/>
+      <outfile xil_pn:name="testMux.v"/>
+      <outfile xil_pn:name="testMuxAddSubMulBuff.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1446157495" xil_pn:in_ck="-8786820653952908926" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4318188965492873215" xil_pn:start_ts="1446157488">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="testMuxAddSubMulBuff_beh.prj"/>
+      <outfile xil_pn:name="testMuxAddSubMulBuff_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1446157495" xil_pn:in_ck="4952294873875346199" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8548126607682329068" xil_pn:start_ts="1446157495">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="testMuxAddSubMulBuff_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1444942887" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1444942887">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446158291" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8913020128966632655" xil_pn:start_ts="1446158291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446158291" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-210576403814160642" xil_pn:start_ts="1446158291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1444942887" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1444942887">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446158291" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1690356035259665105" xil_pn:start_ts="1446158291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1444942887" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1444942887">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446158718" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7642453478359246840" xil_pn:start_ts="1446158718">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446158812" xil_pn:in_ck="6858811139409288249" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3510014140431079785" xil_pn:start_ts="1446158799">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BCD.ngr"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.lso"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.ngc"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.ngr"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.prj"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.stx"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.syr"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.xst"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_xst.xrpt"/>
+      <outfile xil_pn:name="Verilog.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1446158726" xil_pn:in_ck="8459773735059056112" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3161967495165165082" xil_pn:start_ts="1446158726">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446158820" xil_pn:in_ck="3129107531322180071" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4165160432667464137" xil_pn:start_ts="1446158812">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.bld"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.ngd"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1446763528" xil_pn:in_ck="-6790268691812330422" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1446763515">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.pcf"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_map.map"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_map.mrp"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_map.ncd"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_map.ngm"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_map.xrpt"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_summary.xml"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1446763614" xil_pn:in_ck="-846993879208259723" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1446763528">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.ncd"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.pad"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.par"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.ptwx"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.unroutes"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.xpi"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_pad.csv"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_pad.txt"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1446763654" xil_pn:in_ck="1265348292956938158" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-1367077980582467795" xil_pn:start_ts="1446763614">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="muxaddermultiplierbcdbuffer.bgn"/>
+      <outfile xil_pn:name="muxaddermultiplierbcdbuffer.bit"/>
+      <outfile xil_pn:name="muxaddermultiplierbcdbuffer.drc"/>
+      <outfile xil_pn:name="muxaddermultiplierbcdbuffer.ll"/>
+      <outfile xil_pn:name="muxaddermultiplierbcdbuffer.msk"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1445623197" xil_pn:in_ck="1044592262414972219" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1445623197">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1446763705" xil_pn:in_ck="-6513534723042264916" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1446763654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446763614" xil_pn:in_ck="-7151436471435110082" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1446763597">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.twr"/>
+      <outfile xil_pn:name="MuxAdderMultiplierBCDBuffer.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

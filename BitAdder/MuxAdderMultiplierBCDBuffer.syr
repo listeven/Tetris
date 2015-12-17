@@ -1,0 +1,487 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: MuxAdderMultiplierBCDBuffer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MuxAdderMultiplierBCDBuffer.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MuxAdderMultiplierBCDBuffer"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : MuxAdderMultiplierBCDBuffer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\WholeAdder.v" into library work
+Parsing module <WholeAdder>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Compliment.v" into library work
+Parsing module <Compliment>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Verilog.v" into library work
+Parsing module <Verilog>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\ToFourBit.v" into library work
+Parsing module <ToFourBit>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\And.v" into library work
+Parsing module <And>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" into library work
+Parsing module <Multiplier>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" into library work
+Parsing module <BCD>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" into library work
+Parsing module <IntermediateModule>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\FourToOneMultiplexer.v" into library work
+Parsing module <FourToOneMultiplexer>.
+Analyzing Verilog file "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\MuxAdderMultiplierBCDBuffer.v" into library work
+Parsing module <MuxAdderMultiplierBCDBuffer>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\MuxAdderMultiplierBCDBuffer.v" Line 27: Port FirstSums is not connected to this instance
+
+Elaborating module <MuxAdderMultiplierBCDBuffer>.
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" Line 29: Port S1 is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" Line 32: Port FirstCarry is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" Line 44: Port Bcom is not connected to this instance
+
+Elaborating module <IntermediateModule>.
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" Line 20: Port Bcom is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" Line 28: Port Bcom is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" Line 38: Port Bcom is not connected to this instance
+
+Elaborating module <Multiplier>.
+
+Elaborating module <And>.
+
+Elaborating module <ToFourBit>.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" Line 13: Size mismatch in connection of port <carry>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <Verilog>.
+
+Elaborating module <Compliment>.
+
+Elaborating module <WholeAdder>.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" Line 20: Size mismatch in connection of port <m>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" Line 28: Size mismatch in connection of port <m>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" Line 38: Size mismatch in connection of port <m>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" Line 30: Port Bcom is not connected to this instance
+WARNING:HDLCompiler:1016 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" Line 38: Port Bcom is not connected to this instance
+
+Elaborating module <BCD>.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" Line 30: Size mismatch in connection of port <m>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" Line 38: Size mismatch in connection of port <m>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <FourToOneMultiplexer>.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\FourToOneMultiplexer.v" Line 33: Signal <A0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\FourToOneMultiplexer.v" Line 34: Signal <A1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\FourToOneMultiplexer.v" Line 37: Signal <A2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\FourToOneMultiplexer.v" Line 38: Signal <A3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MuxAdderMultiplierBCDBuffer>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\MuxAdderMultiplierBCDBuffer.v".
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\MuxAdderMultiplierBCDBuffer.v" line 27: Output port <FirstSums> of the instance <findAValues> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\MuxAdderMultiplierBCDBuffer.v" line 27: Output port <temp> of the instance <findAValues> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\MuxAdderMultiplierBCDBuffer.v" line 27: Output port <V> of the instance <findAValues> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\MuxAdderMultiplierBCDBuffer.v" line 27: Output port <BCDSums> of the instance <findAValues> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <MuxAdderMultiplierBCDBuffer> synthesized.
+
+Synthesizing Unit <IntermediateModule>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v".
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <S1> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <S2> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <q> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <v> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <w> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <carries> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <wsecond> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <vsecond> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <wthird> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <vthird> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <S3> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 29: Output port <doNotUse> of the instance <multiply> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 32: Output port <FirstSums> of the instance <bcdAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 32: Output port <EitherZeroOrSix> of the instance <bcdAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 32: Output port <FirstCarry> of the instance <bcdAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 32: Output port <V2> of the instance <bcdAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 32: Output port <V> of the instance <bcdAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 32: Output port <CarryOutFake> of the instance <bcdAdder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 44: Output port <Bcom> of the instance <FourAddSubtract> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\IntermediateModule.v" line 44: Output port <C> of the instance <FourAddSubtract> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <temp<3:2>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <V<3:1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <IntermediateModule> synthesized.
+
+Synthesizing Unit <Multiplier>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v".
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" line 20: Output port <Bcom> of the instance <addFirstq> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" line 20: Output port <C> of the instance <addFirstq> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" line 28: Output port <Bcom> of the instance <addFirstb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" line 28: Output port <C> of the instance <addFirstb> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" line 38: Output port <Bcom> of the instance <addFirsta> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Multiplier.v" line 38: Output port <C> of the instance <addFirsta> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <carries<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <doNotUse<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Multiplier> synthesized.
+
+Synthesizing Unit <And>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\And.v".
+    Found 1x1-bit multiplier for signal <n0008> created at line 27.
+    Found 1x1-bit multiplier for signal <n0007> created at line 28.
+    Found 1x1-bit multiplier for signal <n0006> created at line 29.
+    Found 1x1-bit multiplier for signal <n0005> created at line 30.
+    Summary:
+	inferred   4 Multiplier(s).
+Unit <And> synthesized.
+
+Synthesizing Unit <ToFourBit>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\ToFourBit.v".
+WARNING:Xst:647 - Input <q<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ToFourBit> synthesized.
+
+Synthesizing Unit <Verilog>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Verilog.v".
+WARNING:Xst:653 - Signal <C<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+Unit <Verilog> synthesized.
+
+Synthesizing Unit <Compliment>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\Compliment.v".
+    Summary:
+Unit <Compliment> synthesized.
+
+Synthesizing Unit <WholeAdder>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\WholeAdder.v".
+    Found 1-bit adder for signal <n0015> created at line 30.
+    Found 1-bit adder for signal <C> created at line 30.
+    Found 1x1-bit multiplier for signal <n0007> created at line 30.
+    Found 1x1-bit multiplier for signal <n0008> created at line 30.
+    Found 1x1-bit multiplier for signal <n0010> created at line 30.
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <WholeAdder> synthesized.
+
+Synthesizing Unit <BCD>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v".
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" line 30: Output port <Bcom> of the instance <addFirst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" line 30: Output port <C> of the instance <addFirst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" line 38: Output port <Bcom> of the instance <addSecong> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\BCD.v" line 38: Output port <C> of the instance <addSecong> is unconnected or connected to loadless signal.
+    Found 1x1-bit multiplier for signal <n0010> created at line 31.
+    Found 1x1-bit multiplier for signal <n0011> created at line 31.
+    Summary:
+	inferred   2 Multiplier(s).
+Unit <BCD> synthesized.
+
+Synthesizing Unit <FourToOneMultiplexer>.
+    Related source file is "\\ad\eng\users\f\e\fedir5\311Lab\BitAdder\FourToOneMultiplexer.v".
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <FourToOneMultiplexer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 90
+ 1x1-bit multiplier                                    : 90
+# Adders/Subtractors                                   : 48
+ 1-bit adder                                           : 48
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+# Xors                                                 : 78
+ 1-bit xor2                                            : 78
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <WholeAdder>.
+	Multiplier <Mmult_n0007> in block <WholeAdder> and adder/subtractor <Madd_C_Madd> in block <WholeAdder> are combined into a MAC<Maddsub_n0007>.
+Unit <WholeAdder> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 24
+ 1x1-to-1-bit MAC                                      : 24
+# Multipliers                                          : 66
+ 1x1-bit multiplier                                    : 66
+# Multiplexers                                         : 3
+ 8-bit 2-to-1 multiplexer                              : 3
+# Xors                                                 : 78
+ 1-bit xor2                                            : 78
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MuxAdderMultiplierBCDBuffer> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MuxAdderMultiplierBCDBuffer, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MuxAdderMultiplierBCDBuffer.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 64
+#      GND                         : 1
+#      LUT2                        : 16
+#      LUT3                        : 6
+#      LUT4                        : 9
+#      LUT5                        : 7
+#      LUT6                        : 24
+#      VCC                         : 1
+# IO Buffers                       : 51
+#      IBUF                        : 11
+#      OBUF                        : 40
+# DSPs                             : 32
+#      DSP48A1                     : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   62  out of   9112     0%  
+    Number used as Logic:                62  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     62
+   Number with an unused Flip Flop:      62  out of     62   100%  
+   Number with an unused LUT:             0  out of     62     0%  
+   Number of fully used LUT-FF pairs:     0  out of     62     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          51
+ Number of bonded IOBs:                  51  out of    232    21%  
+
+Specific Feature Utilization:
+ Number of DSP48A1s:                     32  out of     32   100%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 49.778ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1391629161 / 35
+-------------------------------------------------------------------------
+Delay:               49.778ns (Levels of Logic = 16)
+  Source:            b<0> (PAD)
+  Destination:       Y<3> (PAD)
+
+  Data Path: b<0> to Y<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.222   1.027  b_0_IBUF (b_0_IBUF)
+     DSP48A1:A0->PCOUT47    1   4.469   0.000  findAValues/bcdAdder/addFirst/bit1/Mmult_n0008 (findAValues/bcdAdder/addFirst/bit1/Mmult_n0008_PCOUT_to_findAValues/bcdAdder/addFirst/bit1/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    4   2.264   0.683  findAValues/bcdAdder/addFirst/bit1/Maddsub_n0007 (findAValues/bcdAdder/addFirst/C<0>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  findAValues/bcdAdder/addFirst/bit2/Mmult_n0008 (findAValues/bcdAdder/addFirst/bit2/Mmult_n0008_PCOUT_to_findAValues/bcdAdder/addFirst/bit2/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    4   2.264   0.683  findAValues/bcdAdder/addFirst/bit2/Maddsub_n0007 (findAValues/bcdAdder/addFirst/C<1>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  findAValues/bcdAdder/addFirst/bit3/Mmult_n0008 (findAValues/bcdAdder/addFirst/bit3/Mmult_n0008_PCOUT_to_findAValues/bcdAdder/addFirst/bit3/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    6   2.264   0.744  findAValues/bcdAdder/addFirst/bit3/Maddsub_n0007 (findAValues/bcdAdder/addFirst/C<2>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  findAValues/bcdAdder/addFirst/bit4/Mmult_n0008 (findAValues/bcdAdder/addFirst/bit4/Mmult_n0008_PCOUT_to_findAValues/bcdAdder/addFirst/bit4/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    3   2.264   1.015  findAValues/bcdAdder/addFirst/bit4/Maddsub_n0007 (findAValues/bcdAdder/FirstCarry)
+     LUT6:I0->O            6   0.203   0.744  findAValues/bcdAdder/CarryOut1 (A2_5_OBUF)
+     DSP48A1:A0->P0        3   4.560   0.650  findAValues/bcdAdder/addSecong/bit2/Maddsub_n0007 (findAValues/bcdAdder/addSecong/C<1>)
+     DSP48A1:B0->PCOUT47    1   4.400   0.000  findAValues/bcdAdder/addSecong/bit3/Mmult_n0008 (findAValues/bcdAdder/addSecong/bit3/Mmult_n0008_PCOUT_to_findAValues/bcdAdder/addSecong/bit3/Maddsub_n0007_PCIN_47)
+     DSP48A1:PCIN47->P0    1   2.264   0.580  findAValues/bcdAdder/addSecong/bit3/Maddsub_n0007 (findAValues/bcdAdder/addSecong/C<2>)
+     LUT4:I3->O            2   0.205   0.721  findAValues/bcdAdder/addSecong/bit4/Mxor_S_xo<0>1 (A2_3_OBUF)
+     LUT6:I4->O            1   0.203   0.579  selectOne/Mmux_Y41 (Y_3_OBUF)
+     OBUF:I->O                 2.571          Y_3_OBUF (Y<3>)
+    ----------------------------------------
+    Total                     49.778ns (42.353ns logic, 7.425ns route)
+                                       (85.1% logic, 14.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.90 secs
+ 
+--> 
+
+Total memory usage is 279396 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
+

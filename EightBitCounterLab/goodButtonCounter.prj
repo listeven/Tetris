@@ -1,0 +1,3 @@
+verilog work "EightCounter.v"
+verilog work "debouncer.v"
+verilog work "goodButtonCounter.v"
